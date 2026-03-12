@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <title>WeEdit: A Dataset, Benchmark and Glyph-Guided Framework for Text-centric Image Editing</title>
+  <link rel="icon" type="image/x-icon" href="static/images/weedit-logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="background: linear-gradient(90deg, #5dab6f, #4a8bc2, #3b6fc9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">WeEdit</span>: A Dataset, Benchmark and Glyph-Guided<br> Framework for Text-centric Image Editing</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://huizhang0812.github.io/" target="_blank">Hui Zhang</a><sup>1, 2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=WuXHtcgAAAAJ&hl=zh-CN" target="_blank">Juntao Liu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://dblp.org/pid/214/0917.html" target="_blank">Zongkai Liu</a><sup>1,3</sup>,</span>
+                  <span class="author-block">  
+                  <a href="https://scholar.google.com/citations?user=9Qk5MEAAAAAJ&hl=zh-CN" target="_blank">Liqiang Niu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://fandongmeng.github.io/" target="_blank">Fandong Meng</a><sup>1</sup>,</span><br>
+                  <span class="author-block">
+                  <a href="https://zxwu.azurewebsites.net/" target="_blank">Zuxuan Wu</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=f3_FP8AAAAAJ&hl=en" target="_blank">Yu-Gang Jiang</a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>WeChat AI, Tencent</span>
+                    <span class="author-block"><sup>2</sup>Fudan University</span>
+                    <span class="author-block"><sup>3</sup>Sun Yat-sen University</span><br>
+                    <!--<span class="author-block">conference</span>-->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- ArXiv PDF Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" >
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                      <!-- Github link -->
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark" >
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Datasets Link -->
+              <span class="link-block">
+                <a href="" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span>Dataset</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Benchmark</span>
+            </a>
+          </span>
+
+          <!-- <span class="link-block">
+            <a href="" target="_blank" 
+               class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                </span>
+                <span>Demo</span>
+            </a>
+          </span> -->
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+       <div class="item">
+        <img src="static/images/teaser_ours.jpg" alt="WeEdit Teaser"/>
+        <h2 class="subtitle has-text-centered">
+          WeEdit achieves precise manipulation of textual content within images across diverse editing operations. Eedited regions are highlighted with <span style="color:blue">blue</span> bounding boxes.
+        </h2>
+      </div>
+  </div>
+</div>
+</section>
+<!-- End teaser image -->
+
+<!-- Teaser Compare -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+       <div class="item">
+        <img src="static/images/teaser_compare.jpg" alt="Comparison with existing methods"/>
+        <h2 class="subtitle has-text-centered">
+          WeEdit achieves the best performance in instruction adherence among all open-source models on both bilingual and multilingual benchmarks, surpassing most proprietary models and ranking second only to Nano Banana Pro.
+        </h2>
+      </div>
+  </div>
+</div>
+</section>
+<!-- End teaser compare -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Instruction-based image editing aims to modify specific content within existing images according to user-provided instructions while preserving non-target regions. 
+Beyond traditional object- and style-centric manipulation, text-centric image editing focuses on modifying, translating, or rearranging textual elements embedded within images. 
+However, existing leading models often struggle to execute complex text editing precisely, frequently producing blurry or hallucinated characters. 
+We attribute these failures primarily to the lack of specialized training paradigms tailored for text-centric editing, as well as the absence of large-scale datasets and standardized benchmarks necessary for a closed-loop training and evaluation system. 
+To address these limitations, we present WeEdit, a systematic solution encompassing a scalable data construction pipeline, two benchmarks, and a tailored two-stage training strategy. 
+Specifically, we propose a novel HTML-based automatic editing pipeline, which generates 330K training pairs covering diverse editing operations and 15 languages, accompanied by standardized bilingual and multilingual benchmarks for comprehensive evaluation. 
+On the algorithmic side, we employ glyph-guided supervised fine-tuning to inject explicit spatial and content priors, followed by a multi-objective reinforcement learning stage to align generation with instruction adherence, text clarity, and background preservation. 
+Extensive experiments demonstrate that WeEdit outperforms previous open-source models by a clear margin across diverse editing operations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Dataset -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Dataset</h2>
+      <div id="dataset-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/data_pipeline.jpg" alt="Data Construction Pipeline"/>
+          <h2 class="subtitle has-text-centered">
+            Overview of our data construction pipelines. <b>Top:</b> The <em>structured</em> pipeline converts a source image to HTML, extracts and edits text content via a VLM, and renders both source and target images through a headless browser, yielding pixel-perfect editing pairs. <b>Bottom:</b> The <em>unstructured</em> pipeline uses a VLM to propose editing instructions, executes edits with an editing model, and iteratively verifies quality until all acceptance criteria are met.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/data_statistics.jpg" alt="Dataset Statistics"/>
+          <h2 class="subtitle has-text-centered">
+            Statistics of WeEdit Dataset: (a) Distribution over seven editing operation types. (b) Language distribution across 15 supported languages. (c) Distribution of the number of edited regions per sample. (d) Distribution of edited text length per sample. The training set contains 330K samples (160K unstructured + 170K structured).
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benchmark -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Benchmark</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/benchmark.jpg" alt="WeEdit Benchmark">
+          <p>
+            Overview of the WeEdit Benchmark. It covers 8 editing operations (Add, Replace, Delete, Rearrange, Translate, Change Style, Combined, and Reasoning), with both a bilingual (Chinese–English) and a multilingual (15 languages) version, each containing 2,000 test cases. Models are evaluated on Instruction Adherence, Text Clarity, and Background Preservation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Glyph-Guided SFT -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Glyph-Guided Supervised Fine-Tuning</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/SFT.jpg">
+          <p>
+            A VLM first detects text regions in the source image and plans the target text content and layout according to the editing instruction. The planned targets are rendered as a glyph image on a blank canvas, providing explicit spatial and content priors. The source image, instruction, and glyph image are then jointly fed into a LoRA-adapted MM-DiT to generate the edited image.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Multi-Objective RL -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Multi-Objective Reinforcement Learning</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/RL.jpg">
+          <p>
+            The model generates multiple candidate images per input, which are scored by four VLM-based reward models along complementary dimensions: instruction adherence, text clarity, background preservation, and relative quality against a reference. Each reward is computed via logit-weighted continuous scoring for smooth gradients. The composite reward drives a contrastive policy optimization that pulls the model toward high-reward edits and pushes it away from low-reward ones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Quantitative Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+      <div id="quant-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/quantitive_bilingual.png" alt="Bilingual Benchmark Results"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Quantitative results on the Bilingual Benchmark.</b> We compare WeEdit with <span style="background:#CBF1F5;padding:1px 4px">proprietary</span> and <span style="background:#FDE7BB;padding:1px 4px">open-source</span> models across 8 editing operations. IA, TC, and BP denote Instruction Adherence, Text Clarity, and Background Preservation. The best open-source results are in <b>bold</b>, with <span style="background:#E7F0DC;padding:1px 4px">top-3</span> highlighted. Our method significantly improves over the <span style="background:#EEEEEE;padding:1px 4px">base model</span>.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/quantitive_multilingual.png" alt="Multilingual Benchmark Results"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Quantitative results on the Multilingual Benchmark.</b> We compare WeEdit with <span style="background:#CBF1F5;padding:1px 4px">proprietary</span> and <span style="background:#FDE7BB;padding:1px 4px">open-source</span> models across 8 editing operations. IA, TC, and BP denote Instruction Adherence, Text Clarity, and Background Preservation. The best open-source results are in <b>bold</b>, with <span style="background:#E7F0DC;padding:1px 4px">top-3</span> highlighted. Our method significantly improves over the <span style="background:#EEEEEE;padding:1px 4px">base model</span>.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Qualitative Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_add.jpg" alt="Add operation results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of the <b>add</b> operation. WeEdit seamlessly inserts new text into images with appropriate font, size, and positioning.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_replace.jpg" alt="Replace operation results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of the <b>replace</b> operation. WeEdit precisely replaces textual content while maintaining the original style and layout.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_delete_rearrange.jpg" alt="Delete and rearrange operation results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of the <b>delete</b> and <b>rearrange</b> operations. WeEdit cleanly removes or repositions text while preserving the background.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_translate.jpg" alt="Translation results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of the <b>translate</b> operation. WeEdit accurately translates text across multiple languages while preserving the visual context.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_style.jpg" alt="Style transfer results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of the <b>style transfer</b> operation. WeEdit modifies text style attributes (e.g., font, color, effects) while keeping the textual content unchanged.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_combined.jpg" alt="Combined operation results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of <b>combined operations</b>. WeEdit performs multiple editing operations simultaneously within a single instruction.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative_results_appendix_reasoning.jpg" alt="Reasoning-based editing results"/>
+          <h2 class="subtitle has-text-centered">
+            Qualitative results of <b>reasoning-based editing</b>. WeEdit handles complex instructions that require understanding context and reasoning about the desired edit.
+          </h2>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{zhang2026weedit,
+          title={WeEdit: A Dataset, Benchmark and Glyph-Guided Framework for Text-centric Image Editing},
+          author={Zhang, Hui and Liu, Juntao and Liu, Zongkai and Niu, Liqiang and Meng, Fandong and Wu, Zuxuan and Jiang, Yu-Gang},
+          journal={arXiv preprint},
+          year={2026}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
