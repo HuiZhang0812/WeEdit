@@ -6,6 +6,7 @@
 <img src='assets/figures/teaser_compare.jpg' width='100%' />
 
 <br>
+<a href="https://arxiv.org/pdf/2603.11593"><img src="https://img.shields.io/static/v1?label=Paper&message=2603.11593&color=red&logo=arxiv"></a>
 <a href="https://huizhang0812.github.io/WeEdit/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a>
 <a href="https://huggingface.co/datasets/HuiZhang0812/WeEdit_benchmark"><img src="https://img.shields.io/badge/🤗_HuggingFace-Benchmark-ffbd45.svg" alt="HuggingFace"></a>
 
@@ -109,7 +110,7 @@ If you find our work useful for your research and applications, please kindly ci
 @article{zhang2026weedit,
   title={WeEdit: A Dataset, Benchmark and Glyph-Guided Framework for Text-centric Image Editing},
   author={Zhang, Hui and Liu, Juntao and Liu, Zongkai and Niu, Liqiang and Meng, Fandong and Wu, Zuxuan and Jiang, Yu-Gang},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2603.11593},
   year={2026}
 }
 ```
